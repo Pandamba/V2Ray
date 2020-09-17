@@ -3,18 +3,18 @@ version: '2'
 services:
   v2ray:
     image: cmdhim/rico:v2ray        #镜像
-    container_name: Panda     #容器名
+    container_name: HIM     #容器名
     restart: always     #当docker重启时,容器自动启动
     network_mode: "host"        #docker网络配置请勿更改
     extra_hosts:
       auth.rico93.com: 127.0.0.1        #屏蔽验证服务器
     environment:
-      sspanel_url: "https://Panda.mba"     #前端域名
-      key: "panda"     #mu_key
+      sspanel_url: "https://sjiuishuhfeufuebfububncissn.tiyunzong.club"     #前端域名
+      key: "sspankey"     #mu_key
       docker: "true"
       speedtest: 6      #节点测速时间，单位：时
       node_id: 68       #节点ID
-      api_port: 9898        #api端口，不能与其他docker重复
+      api_port: 5109        #api端口，不能与其他docker重复
       downWithPanel: 1
       LDNS: "1.1.1.1"       #流媒体DNS配置，填写解锁dns
       TZ: "Asia/Shanghai"       #时区设定
