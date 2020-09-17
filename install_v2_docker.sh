@@ -4,7 +4,7 @@ rpm -q wget || yum install -y wget
 suijishu=`cat /dev/urandom | tr -dc '0-9a-z' | head -c 15`
 mkdir /tmp/$suijishu
 cd /tmp/$suijishu
-wget https://raw.githubusercontent.com/961644045/HIM/master/docker-compose.yml
+wget https://raw.githubusercontent.com/Pandamba/V2Ray/master/docker-compose.yml
 read -p " 请输入容器名字：" dockername
 echo "面板地址如：http://www.baidu.com"
 read -p "请输入你的面板地址后面不要带斜杠'/'：" dockerurl
